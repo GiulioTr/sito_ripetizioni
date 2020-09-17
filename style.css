@@ -1,0 +1,346 @@
+/*Global style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*per rendere i rem=10px*/
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3,
+h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  color: white;
+}
+
+/*Header style*/
+.main-head {
+  background: #373737;
+}
+
+.main-head nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: "Lobster", sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+/*Main body style*/
+.main-page-wrapper {
+  background: #303030;
+}
+
+.main-page {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-page-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50rem;
+}
+
+#main-page-body h1 {
+  margin-bottom: 2rem;
+}
+
+#foto-profilo {
+  flex: 1 1 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#foto-profilo img {
+  max-width: 60%;
+  margin: 1rem;
+}
+
+.buttons {
+  min-height: 20vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons button {
+  font-size: 3rem;
+  width: 25%;
+  padding: 2rem;
+  border: none;
+  background-color: #ab8de1;
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+/*Tariffe style*/
+.tariffe {
+  background: #373737;
+  color: white;
+}
+
+.tariffe header {
+  min-height: 15vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tariffe header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.cards {
+  min-height: 85vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 30rem;
+  margin: 6rem;
+  background: #65499c;
+  min-height: 45vh;
+}
+
+.card-body {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.card-title {
+  background: #ab8de1;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: black;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Contatti style*/
+.contatti {
+  min-height: 90vh;
+  background: #303030;
+  color: white;
+}
+
+.contatti header {
+  min-height: 15vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contatti header h1 {
+  margin-bottom: 1.5rem;
+}
+.contact-buttons {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-buttons button {
+  font-size: 3rem;
+  color: white;
+  width: 25%;
+  padding: 2rem;
+  border: none;
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+#dove-sono {
+  background-color: #d8bc42;
+}
+
+#telefono {
+  background-color: #2196f3;
+}
+
+#whatsapp {
+  background-color: #64b161;
+}
+
+#telegram {
+  background-color: #52baed;
+}
+
+footer {
+  min-height: 10vh;
+  background: #373737;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-page {
+    flex-direction: column;
+  }
+
+  #main-page-body {
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    flex: 1 1 20rem;
+  }
+
+  #foto-profilo {
+    padding: 1rem;
+    justify-content: center;
+    flex: 1 1 20rem;
+  }
+
+  #foto-profilo img {
+    max-width: 50%;
+  }
+
+  .contact-buttons button {
+    width: 40%;
+  }
+
+  .buttons button {
+    width: 35%;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  html {
+    font-size: 40%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  #foto-profilo img {
+    max-width: 30%;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 30%;
+  }
+
+  .main-page {
+    flex-direction: column;
+  }
+
+  #main-page-body {
+    order: 2;
+    text-align: center;
+    justify-content: flex-start;
+    flex: 1 1 10rem;
+  }
+
+  #foto-profilo {
+    order: 1;
+    padding: 1rem;
+    justify-content: center;
+    flex: 2 1 20rem;
+  }
+
+  #foto-profilo img {
+    max-width: 60%;
+  }
+
+  .contact-buttons button {
+    width: 50%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .buttons button {
+    width: 40%;
+  }
+
+  .cards {
+    margin: 2rem;
+    margin: auto;
+  }
+
+  .card {
+    flex: 1 1 25rem;
+  }
+}
